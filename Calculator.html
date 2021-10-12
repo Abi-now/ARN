@@ -1,0 +1,112 @@
+<html>
+  <header>
+    
+    <title>Calculator</title>
+   <body style="text-align:center;color:#063b48">
+   
+    <style>
+    
+    input[type="text"] {
+      padding:70px;
+      height:10px;
+      width:100%;
+      background:cyan;
+      color:orange;
+      font-size:48px ;
+      webkit-text-emphasis-position: right;
+      text-align:right;
+      text-decoration-color:white;
+    }
+    
+  
+    input[type="button"] {
+    
+    width:19px 12px 13px;
+    padding:10px 12px;
+    background:orange;
+    font-size:26px;
+    color:black;
+    
+   
+    hr{
+      max-height: 100px;
+      width:43px;
+    }
+    
+    
+    
+    
+    </style>
+    
+    <form action="" name="calculator">
+      
+   <input type="text" name="screen" disabled>
+   <hr>
+     <input type="button" value="      +  " onclick="calculator.screen.value +='+'">
+
+<input type="button" value=" &larr;" onclick="calculator.screen.value=calculator.screen.value.slice(0,-1)">
+
+<input type="button" value=" &radic;" onclick="calculator.screen.value=Math.sqrt(calculator.screen.value)">
+
+<input type="button" value="  ×  " onclick="calculator.screen.value +='*'">
+<input type="button" value="  - " onclick="calculator.screen.value +='-'">
+
+<input type="button" value="    ÷  " onclick="calculator.screen.value+= '/'">
+
+<input type="button" value="." onclick="calculator.screen.value+= '.'">
+     <input type="button" value="x^2" onclick="calculator.screen.value=Math.pow(calculator.screen.value,2)">
+
+<input type="button" value=" x^3 " onclick="calculator.screen.value=Math.pow(calculator.screen.value,3)">
+<input type="button" value="log" onclick="calculator.screen.value=Math.log(calculator.screen.value)">
+<input type="button" value="  Sin   " onclick="calculator.screen.value=Math.sin(calculator.screen.value)">
+<input type="button" value=" Cos " onclick="calculator.screen.value=Math.cos(calculator.screen.value)">
+<input type="button" value="Tan" onclick="calculator.screen.value=Math.tan(calculator.screen.value)">
+<input type="button" value="(" onclick="calculator.screen.value+='('">
+<input type="button" value=")" onclick="calculator.screen.value+=')'">
+
+<input type="button" value="  0  " onclick="calculator.screen.value +='0'">
+
+<input type="button" value=" 1" onclick="calculator.screen.value +='1'">
+
+<input type="button" value=" 2" onclick="calculator.screen.value +='2'">
+
+<input type="button" value=" 3 " onclick="calculator.screen.value +='3'">
+
+
+<input type="button" value="4" onclick="calculator.screen.value +='4'">
+
+
+<input type="button" value="  5" onclick="calculator.screen.value +='5'">
+
+<input type="button" value="    6    " onclick="calculator.screen.value +='6'">
+<input type="button" value=" 9" onclick="calculator.screen.value +='9'">
+
+
+<input type="button" value="8" onclick="calculator.screen.value +='8'">
+
+<input type="button" value="7" onclick="calculator.screen.value +='7'">
+
+
+
+
+<input type="button" value="   cl     " onclick="calculator.screen.value=''">
+
+
+
+<input type="button" value="     3√    " onclick="calculator.screen.value =Math.pow(calculator.screen.value,1/3)">
+
+
+
+<input type="button" value="               
+ =  " onclick= "calculator.screen.value = eval(calculator.screen.value)">
+  <input type="button" value=" π " onclick="calculator.screen.value=Math.PI*(calculator.screen.value)">
+
+</style>
+    </form>
+    
+  </header>
+ 
+    
+  </body>
+  
+</html>
